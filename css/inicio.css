@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+main{
+    background-color: #e4d8ce
+}
+
+/* --------------- Carrusel ---------------*/
+.carousel-item{
+    display: flex; 
+    justify-content: center;
+    background-color: #45575B;
+}
+
+
+
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important; 
+    justify-content: center;
+    background-color: #45575B;
+}
+
+
+.carousel-item img{
+    width: 100%;
+    
+}
+
+.carousel-caption a{
+    margin: 10px;
+}
+
+/* --------------- Fin Carrusel ---------------*/
+
+
+
+.informacion{
+    margin: 5%;
+    padding: 3%;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: #45575B;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.informacion .informacion_texto{
+    width: 50%;
+    padding: 2%;
+}
+
+.informacion .informacion_imagen{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.informacion .informacion_imagen_logo{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.informacion img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+
+#redes_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.informacion_contacto{
+    list-style: none;
+    color:white;
+    
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 100px;
+}
+
+.informacion_contacto_item{
+    display: flex;
+    align-items: center;
+
+}
+
+.informacion_contacto_item a{
+    text-decoration: none;
+    color:white;
+}
+
+.informacion_contacto_item img{
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+.informacion-6{
+    background-image: url('../sources/images/screen-with-graph-it-that-says-word-financial-it.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+
+    
+
+    height: 400px;
+}
+
+.informacion-6 h2{
+    background-color: #45575B;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
+    display: flex;
+    text-align: center;
+
+}
+
+.button{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: #14252C;
+    padding: 10px;
+}

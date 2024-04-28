@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #e4d8ce;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
+header{
+    background-color:#14252C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_logo{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.header_nav{
+    height: 100px;
+    align-items: center;
+}
+
+.header_nav_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70vw;
+    height: 100%;
+  
+}
+
+.header_nav_lista_de_paginas{
+    display:flex;
+    list-style: none;
+
+
+    justify-content: space-around;
+    align-items: center;
+   
+    flex:2;
+
+    margin: 0;
+}
+
+.header_nav_lista_paginas{
+    color: #A3A39B;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.header_nav_lista_paginas:hover{
+    color:white;
+}
+
+.header_nav_div_pagina_iniciosesion{
+    flex:2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_nav_pagina_iniciosesion{
+    list-style: none;
+    justify-content: flex-end;
+
+    margin: 0;
+    
+}
+
+.header_nav_lista_paginas_iniciosesion{
+    color: #A3A39B;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+    margin: 10px;
+    width: 105px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.header_links_paginas:hover{
+    color:white;
+}
+
+.header_links_paginas{
+    text-decoration: none;
+    color: #A3A39B;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+main{
+   /* height: 70vh;*/
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+footer{
+    background-color: #273C41;
+
+    
+}
+
+.footer_div_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer_div_informacion{
+    display: flex;
+    width: 50%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_lista_informacion{
+    list-style: none;
+    color:white;
+    font-size: 0.8em;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 100px;
+}
+
+.footer_lista_informacion_item{
+    display: flex;
+    align-items: center;
+
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+footer div ul li img{
+    color: white;
+}
+
+.footer_div_copiright{
+    display: flex;
+    background-color: #45575B;
+    color:white;
+    font-size: 0.8em;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    height: 35px;
+    
+    justify-content: center;
+    align-items: center;
+}
