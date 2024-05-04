@@ -46,6 +46,18 @@ main{
     
 }
 
+.terminos{
+    display:flex;
+    align-items: center ;
+
+    padding-top: 30px;
+    
+}
+
+.terminos label{
+    font-size: 0.7em;
+}
+
 #button{
     background-color: #14252C;
     color: white;

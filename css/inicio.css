@@ -74,7 +74,7 @@ main{
 
 .informacion img{
     width: 100%;
-    border-radius: 100px;
+    border-radius: 20px;
 }
 
 
@@ -94,7 +94,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     
-    height: 100px;
+    /*height: 100px;*/
 }
 
 .informacion_contacto_item{
@@ -150,4 +150,31 @@ main{
     color: white;
     background-color: #14252C;
     padding: 10px;
+}
+
+
+/* Medias Querys */
+
+@media only screen and (max-width: 900px){
+    /*
+    header,main,footer{
+        padding: 5px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+    */
+}
+
+@media only screen and (max-width: 570px){
+    /*
+    header,main,footer{
+        padding: 5px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+    */
 }
