@@ -37,6 +37,108 @@
 
     <main>
 
+        <section>
+            
+            <h2>Bonos</h2>
+            <article>
+        <div class="container">
+            <table>
+              <thead>
+                <tr>
+                  <th>tiker</th>
+                  <th> </th>
+                  <th>precio</th>
+                  <th>var</th>
+                  <th>compra</th>
+                  <th>venta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AE38</td>
+                  <td>55.000</td>
+                  <td>1.05%</td>
+                  <td>1.650K</td>
+                  <td class="td_compra">3.000</td>
+                  <td class="td_venta">3.010</td>
+                </tr>
+                <tr>
+                  <td>AE38</td>
+                  <td>55.000</td>
+                  <td>1.05%</td>
+                  <td>1.650K</td>
+                  <td class="td_compra">3.000</td>
+                  <td class="td_venta">3.010</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            </article>
+            <h2>Acciones</h2>
+            <article>
+          <div class="container">
+            <table>
+              <thead>
+                <tr>
+                  <th>tiker</th>
+                  <th> </th>
+                  <th>precio</th>
+                  <th>var</th>
+                  <th>compra</th>
+                  <th>venta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><button id="btn-abrir-modal">YPF</button></td>
+                  <td>55.000</td>
+                  <td>1.05%</td>
+                  <td>1.650K</td>
+                  <td class="td_compra">3.000</td>
+                  <td class="td_venta">3.010</td>
+                </tr>
+                <tr>
+                  <td>GAL</td>
+                  <td>55.000</td>
+                  <td>1.05%</td>
+                  <td>1.650K</td>
+                  <td class="td_compra">3.000</td>
+                  <td class="td_venta">3.010</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <dialog id="modal">
+            <h3>Grafico</h3>
+            <button id="btn-cerrar-modal">
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="grafico">
+          <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+        <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+        "autosize": true,
+        "symbol": "NYSE:YPF",
+        "interval": "D",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "theme": "light",
+        "style": "1",
+        "locale": "es",
+        "allow_symbol_change": true,
+        "calendar": false,
+        "support_host": "https://www.tradingview.com"
+        }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+        </div>
+      </dialog>
+    
+            </article>
+          </section>
     </main>
 
     <footer>
@@ -76,5 +178,7 @@
             </div>
         </div>
     </footer>
+
+    <script defer src="../scripts/cotizaciones.js"></script>
 </body>
 </html>
