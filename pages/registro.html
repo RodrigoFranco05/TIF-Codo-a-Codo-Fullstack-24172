@@ -48,6 +48,13 @@
             <label for="">Apellido</label>
             <input type="text" name="LastName" required>
 
+            <label for="">Sexo</label>
+            <select name="sexo">
+                <option value="hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="NoEspecifica">No Especifica</option>
+            </select>
+
             <label for="">Nombre de Usuario</label>
             <input type="text" name="UserName" required>
 
@@ -81,14 +88,24 @@
             <div class="terminos">
                 
                 <input type="checkbox" name="Terms" id="" required>
-                <label for="">Acepta los <a href="#">Terminos y condiciones</a></label>
+                <label for="">Acepta los <a href="../sources/documents/Terminos_y_Condiciones.pdf">Terminos y condiciones</a></label>
             
             </div>
 
-            <input type="submit" id="button">
+            <input type="submit" id="btn-abrir-modal">
 
         </form>
         
+        <dialog id="modal">
+            <div class="contenido2">
+                <h3>Creacion de Usuario Exitosa!</h3>
+                <button id="btn-cerrar-modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <a href="iniciosesion.html">Volver a Inicio de Sesion</a>
+            </div>
+        </dialog>
+
         </div>
     </main>
 
@@ -129,5 +146,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../scripts/registro.js"></script>
 </body>
 </html>

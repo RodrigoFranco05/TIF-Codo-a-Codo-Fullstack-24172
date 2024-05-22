@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+header{
+    background-color: #0e2038e7;
+    
+}
 
 main{
     display: flex;
@@ -12,14 +16,15 @@ main{
     align-items: center;
     justify-content: center;
     font-family: "Raleway", sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
 
     background-color: #A3A39B;
     border: 10px  solid #14252C ;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     
-    width: 40%;
+    min-width:560px;
+    width: 60%;
     margin: 50px;
 }
 
@@ -30,8 +35,12 @@ main{
 }
 
 .contenido form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
 
 }
 
@@ -39,11 +48,34 @@ main{
     font-weight:300
 }
 
+.contenido form select{
+    margin: 10px;
+    height: 30px;
+    border: none;
+    
+}
 .contenido form input{
     margin: 10px;
     height: 30px;
     border: none;
     
+}
+
+.contenido form .terminos{
+    grid-column-start: span 4;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenido form input:last-child{
+    /*grid-column-start: span 4;*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#btn-abrir-modal:hover{
+    background-color: #23404d;
 }
 
 .terminos{
@@ -58,10 +90,72 @@ main{
     font-size: 0.7em;
 }
 
-#button{
+#btn-abrir-modal{
     background-color: #14252C;
     color: white;
     border: none;
     height: 40px;
     margin: 50px;
+}
+
+#modal::backdrop{
+    background-color:  rgba(0,0,0,0.55);
+}
+
+#modal{
+    background-color: #A3A39B;
+    margin: auto;
+
+    min-width: 270px;
+    width: 40%;
+    min-height: 50px;
+    height: 20%;
+
+    
+}
+
+.contenido2{
+
+    background-color: #A3A39B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+#modal h3{
+    margin-top: 40px;
+    font-size: 1.5em;
+
+    text-align: center;
+}
+
+#modal #btn-cerrar-modal{
+    position: absolute;
+    right: 5px;
+    top:7px;
+
+    background-color:#14252C;
+    padding:5px;
+    color: white;
+    border: none;
+}
+
+#modal a{
+    background-color: #14252C;
+    color: white;
+    border: 0;
+    padding: 10px;
+    text-decoration: none;
+    
+   margin-top: 10px;
+    width: auto;
+    
+
+}
+
+#modal a:hover{
+    background-color: #23404d;
 }
