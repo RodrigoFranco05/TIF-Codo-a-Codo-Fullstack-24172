@@ -1,3 +1,117 @@
-main{
-    height: 70vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  
+  }
+  
+  header{
+    background-color: #0e2038e7;
+    
 }
+
+  main{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    
+    margin: 20px;
+}
+h3{
+    color:white;
+    margin: 10px;
+    display: inline-block;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; 
+}
+
+section h2:first-child{
+    grid-column-start: span 4;
+}
+
+.TablaCrypto{
+    grid-column-start: span 4;
+   
+}
+
+
+
+
+article{
+    border: 1px solid black;
+}
+
+/* tabla*/ 
+.container{
+border: solid 1px black;
+border-radius: 16px;
+margin: 10px;
+}
+
+table{
+color:black;
+font-size: 14px;
+background-color: rgba(139, 139, 139, 0.664);
+border-radius: 16px;
+table-layout: fixed;
+border-collapse: collapse;
+
+}
+
+thead{
+background-color: rgb(14, 32, 56);
+border-radius: 16px;
+color: white;
+}
+
+
+th{
+padding: 15px 15px;
+font-weight: 700;
+text-transform: uppercase;
+}
+th:first-child{
+border-radius: 16px 0 0 0;
+}
+th:last-child{
+border-radius: 0 16px 0 0;
+}
+
+td{
+padding:15px;
+border-bottom: solid 1px rgba(255,255,255,0.4);
+}
+
+tr:nth-child(2n){
+background-color: rgba(235, 235, 235, 0.664);
+}
+
+tbody tr:hover{
+background-color: rgb(14, 32, 56, 0.2);
+}
+.td_compra{
+background-color:lightcoral;
+}
+.td_venta{
+background-color: lightgreen;
+
+}
+
+tbody tr:last-child td:last-child{
+border-radius: 0px 0px 16px;
+}
+tbody tr:last-child td:first-child{
+border-radius: 0 0 0 16px;
+}
+
