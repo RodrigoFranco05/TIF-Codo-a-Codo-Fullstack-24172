@@ -30,10 +30,6 @@
         display: inline-block;
     }
 
-    article{
-        /*display: grid;
-        grid-template-columns: 1fr 1fr;*/
-    }
 
     /* tabla*/ 
   .container{
@@ -98,22 +94,21 @@
     border-radius: 0 0 0 16px;
   }
 
-  #btn-abrir-modal{
+  #btn-abrir-modalBTC,#btn-abrir-modalETH,#btn-abrir-modalLTC,#btn-abrir-modalSOL,#btn-abrir-modalBNB{
     text-decoration: none;
   }
 
   /* modal grafico*/
-  #modal{
+  #modalBTC,#modalETH,#modalSOL,#modalLTC,#modalBNB{
     background-color: rgb(14, 32, 56);
     border-radius: 5px;
     width: 70vw;
     height: 70vh;
     margin:auto;
-   
-   
   }
 
-  #modal button{
+
+  #modalBNB button,#modalBTC button,#modalSOL button,#modalLTC button,#modalETH button{
     position: absolute;
     right: 10px;
     top:7px;
@@ -123,7 +118,7 @@
     font-size: 1.5em;
   }
 
-  #btn-abrir-modal{
+  #btn-abrir-modalBTC,#btn-abrir-modalETH,#btn-abrir-modalSOL,#btn-abrir-modalLTC#btn-abrir-modalBNB{
     border: none;
     background-color: transparent;
     color: blue;
@@ -139,6 +134,6 @@
     
 }
 
-#modal::backdrop{
+#modalBNB::backdrop,#modalSOL::backdrop,#modalETH::backdrop,#modalBTC::backdrop,#modalLTC::backdrop{
     background-color: rgba(0,0,0,0.55);
 }

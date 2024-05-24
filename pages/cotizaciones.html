@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/cotizaciones.css">
 
-    
+    <script defer src="../scripts/consumo.js"></script>
+    <script defer src="../scripts/cotizaciones.js"></script>
+
 </head>
 <body>
     
@@ -53,23 +55,8 @@
                   <th>venta</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>AE38</td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td>1.650K</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_venta">3.010</td>
-                </tr>
-                <tr>
-                  <td>AE38</td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td>1.650K</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_venta">3.010</td>
-                </tr>
+              <tbody id="tablaBonos">
+                
               </tbody>
             </table>
           </div>
@@ -98,8 +85,7 @@
                   <td class="td_venta">3.010</td>
                 </tr>
                 <tr>
-                  <td>GAL</td>
-                  <td>55.000</td>
+                  <td><button id="btn-abrir-modal">GAL</button></td>                  <td>55.000</td>
                   <td>1.05%</td>
                   <td>1.650K</td>
                   <td class="td_compra">3.000</td>
@@ -109,9 +95,9 @@
             </table>
           </div>
           
-          <dialog id="modal">
+          <dialog id="modalBTC">
             <h3>Grafico</h3>
-            <button id="btn-cerrar-modal">
+            <button id="btn-cerrar-modalBTC">
                 <span aria-hidden="true">×</span>
             </button>
             <div class="grafico">
@@ -121,7 +107,7 @@
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
         "autosize": true,
-        "symbol": "NYSE:YPF",
+        "symbol": "CME:BTC1!",
         "interval": "D",
         "timezone": "America/Argentina/Buenos_Aires",
         "theme": "light",
@@ -136,6 +122,119 @@
       <!-- TradingView Widget END -->
         </div>
       </dialog>
+
+      <dialog id="modalETH">
+        <h3>Grafico</h3>
+        <button id="btn-cerrar-modalETH">
+            <span aria-hidden="true">×</span>
+        </button>
+        <div class="grafico">
+      <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+    "autosize": true,
+    "symbol": "COINBASE:ETHUSD",
+    "interval": "D",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "theme": "light",
+    "style": "1",
+    "locale": "es",
+    "allow_symbol_change": true,
+    "calendar": false,
+    "support_host": "https://www.tradingview.com"
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    </div>
+  </dialog>
+
+  <dialog id="modalBNB">
+    <h3>Grafico</h3>
+    <button id="btn-cerrar-modalBNB">
+        <span aria-hidden="true">×</span>
+    </button>
+    <div class="grafico">
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+<div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{
+"autosize": true,
+"symbol": "CRYPTOCAP:BNB",
+"interval": "D",
+"timezone": "America/Argentina/Buenos_Aires",
+"theme": "light",
+"style": "1",
+"locale": "es",
+"allow_symbol_change": true,
+"calendar": false,
+"support_host": "https://www.tradingview.com"
+}
+</script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+</dialog>
+
+<dialog id="modalSOL">
+  <h3>Grafico</h3>
+  <button id="btn-cerrar-modalSOL">
+      <span aria-hidden="true">×</span>
+  </button>
+  <div class="grafico">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+<div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{
+"autosize": true,
+"symbol": "CRYPTOCAP:SOL",
+"interval": "D",
+"timezone": "America/Argentina/Buenos_Aires",
+"theme": "light",
+"style": "1",
+"locale": "es",
+"allow_symbol_change": true,
+"calendar": false,
+"support_host": "https://www.tradingview.com"
+}
+</script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+</dialog>
+
+<dialog id="modalLTC">
+  <h3>Grafico</h3>
+  <button id="btn-cerrar-modalLTC">
+      <span aria-hidden="true">×</span>
+  </button>
+  <div class="grafico">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+<div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+{
+"autosize": true,
+"symbol": "BINANCE:LTCUSDT",
+"interval": "D",
+"timezone": "America/Argentina/Buenos_Aires",
+"theme": "light",
+"style": "1",
+"locale": "es",
+"allow_symbol_change": true,
+"calendar": false,
+"support_host": "https://www.tradingview.com"
+}
+</script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+</dialog>
+
     
             </article>
           </section>
@@ -179,6 +278,5 @@
         </div>
     </footer>
 
-    <script defer src="../scripts/cotizaciones.js"></script>
 </body>
 </html>
