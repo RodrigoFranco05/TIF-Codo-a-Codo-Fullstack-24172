@@ -6,6 +6,8 @@
     <title>Cotizaciones</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/cotizaciones.css">
+    <link rel="stylesheet" href="../css/menu_hamburguesa.css">
+    <link rel="stylesheet" href="../css/barraDolares.css">
 
     
 
@@ -13,6 +15,7 @@
 <body>
     
     <header id="header">
+        
         <img src="../sources/images/logoBA.png" alt="" class="header_logo">
         <nav class="header_nav">
             <ul class="header_nav_lista_de_paginas">
@@ -37,9 +40,68 @@
                 </ul>
             </div>
         </nav>
+      
+        <nav class="hamburger_nav">
+          <div id="toggle_menu" class="toggle_menu">
+              <img src="../sources/images/menu.png" alt="">
+          </div>
+          <ul class="hamburger_nav_lista_de_paginas" id="hamburger_nav_lista_de_paginas">
+              <li class="hamburger_nav_lista_paginas">
+                  <a href="../index.html" class="header_links_paginas">Inicio</a>
+              </li>
+              <li class="hamburger_nav_lista_paginas">
+                  <a href="cotizaciones.html" class="header_links_paginas">Mercado</a>
+              </li>
+              <li class="hamburger_nav_lista_paginas">
+                  <a href="cryptomonedas.html" class="header_links_paginas">Criptomonedas</a>
+              </li>
+              <li class="hamburger_nav_lista_paginas">
+                  <a href="contacto.html" class="header_links_paginas">Contacto</a>
+              </li>
+              <li class="hamburger_nav_lista_paginas">
+                   <a href="iniciosesion.html" class="header_links_paginas">Inicio de Sesion</a>
+              </li>
+              </ul>
+      </nav>
+
+        <div class="barra_dolares" id="barra_dolares">
+          <ul>
+            <li>
+              <span class="indicador_flecha">▲▼</span>
+              <span class="dolar_oficial">Dolar Oficial</span>
+              <span class="dolar_oficial_compra">900</span>
+              <span class="dolar_oficial_venta">950</span>
+              <span class="dolar_oficial_variacion">0,05%</span>
+            </li>
+            <li>
+              <span class="indicador_flecha">▲▼</span>
+              <span class="dolar_oficial">Dolar Oficial</span>
+              <span class="dolar_oficial_compra">900</span>
+              <span class="dolar_oficial_venta">950</span>
+              <span class="dolar_oficial_variacion">0,05%</span>
+            </li>
+            <li>
+              <span class="indicador_flecha">▲▼</span>
+              <span class="dolar_oficial">Dolar Oficial</span>
+              <span class="dolar_oficial_compra">900</span>
+              <span class="dolar_oficial_venta">950</span>
+              <span class="dolar_oficial_variacion">0,05%</span>
+            </li>
+            <li>
+              <span class="indicador_flecha">▲▼</span>
+              <span class="dolar_oficial">Dolar Oficial</span>
+              <span class="dolar_oficial_compra">900</span>
+              <span class="dolar_oficial_venta">950</span>
+              <span class="dolar_oficial_variacion">0,05%</span>
+            </li>
+          </ul>
+        </div>
+
     </header>
 
+
     <main>
+
 
         <section>
             
@@ -209,5 +271,6 @@
         </div>
     </footer>
 
+    <script src="../scripts/menu_hamburguesa.js"></script>
 </body>
 </html>

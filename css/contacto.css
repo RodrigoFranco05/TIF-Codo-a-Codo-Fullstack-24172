@@ -9,10 +9,7 @@
     
   }
   
-  header{
-    background-color: #0e2038e7;
-    
-}
+
 
 main{
     display:flex;
@@ -23,6 +20,12 @@ main{
 
 h1{
     margin:30px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background-color: #A3A39B;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px  rgba(0,0,0,0.62);
 }
 
 form{
@@ -31,6 +34,7 @@ form{
     grid-template-rows: repeat(6, 28px) 300px 60px;
     gap: 20px;
     
+    box-shadow: 0px 30px 30px -30px rgba(0,0,0,0.62);
 
     background-color: #A3A39B;
     padding: 50px;

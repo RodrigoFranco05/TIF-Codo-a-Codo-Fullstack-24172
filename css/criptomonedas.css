@@ -6,10 +6,7 @@
   
   }
   
-  header{
-    background-color: #0e2038e7;
-    
-}
+ 
 
   main{
     display: grid;
@@ -31,6 +28,7 @@ h3{
 }
 
 section{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center; 

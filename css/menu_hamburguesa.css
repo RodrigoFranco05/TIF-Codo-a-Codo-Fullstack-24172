@@ -1,0 +1,100 @@
+
+
+
+
+.hamburger_nav_lista_de_paginas{
+    display: none;
+}
+
+
+.toggle_menu img{
+    max-width: 100%;
+}
+.toggle_menu{
+    width: 40px;
+    display: none;
+
+    position: absolute;
+    top:0.5em;
+    right: 1.5em;
+    cursor: pointer;
+    filter: invert(1);
+    z-index: 99;
+}
+
+.hamburger_nav_lista_de_paginas--show{
+    transform: translateY(0);
+}
+
+
+ /* ---------- MENU HAMBURGUESA ------------------------------ */
+@media only screen and (max-width: 900px){
+   
+#header{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: none;
+    height: 60px;
+}
+
+.toggle_menu{
+    display:inline-block;
+}
+    
+.hamburger_nav{
+    width: 100vw;
+}
+
+.hamburger_nav_lista_de_paginas{
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #0e2038e7;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+   
+}
+.hamburger_nav_lista_de_paginas--show{
+    transform: translateY(0);
+    
+}
+
+.hamburger_nav_lista_paginas{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7em;
+    padding: 0px 40px;
+    text-align: center;
+
+    padding: 0.5em;
+}
+
+.hamburger_nav_lista_paginas:hover{
+    color:#B2AEAC;
+}
+
+.header_nav{
+    display: none;
+}
+
+.header_logo{
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    z-index: 99;
+}
+
+#header {
+    color: white;
+}
+}
+
+

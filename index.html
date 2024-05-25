@@ -7,6 +7,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="../css/menu_hamburguesa.css">
 
     <!-- Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -50,6 +51,29 @@
                     </li>
                 </ul>
             </div>
+        </nav>
+
+        <nav class="hamburger_nav">
+            <div id="toggle_menu" class="toggle_menu">
+                <img src="../sources/images/menu.png" alt="">
+            </div>
+            <ul class="hamburger_nav_lista_de_paginas" id="hamburger_nav_lista_de_paginas">
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="index.html" class="header_links_paginas">Inicio</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="pages/cotizaciones.html" class="header_links_paginas">Mercado</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="pages/cryptomonedas.html" class="header_links_paginas">Criptomonedas</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="pages/contacto.html" class="header_links_paginas">Contacto</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                     <a href="pages/iniciosesion.html" class="header_links_paginas">Inicio de Sesion</a>
+                </li>
+                </ul>
         </nav>
     </header>
 
@@ -293,6 +317,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="../scripts/menu_hamburguesa.js"></script>
 </body>
 
 </html>

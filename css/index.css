@@ -14,9 +14,12 @@ body{
 
 header{
     background-color:transparent;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    /*justify-content: space-between;*/
     align-items: center;
+
+
     position: sticky;
     top: 0;
     z-index: 999;
@@ -103,6 +106,7 @@ header{
 #header.sticky .header_nav_lista_paginas_iniciosesion, #header.sticky .header_links_paginas{
     color: #0E2038;
 }
+
 
 #header.sticky .header_logo{
     width: 80px;
@@ -192,7 +196,7 @@ footer div ul li img{
 
 /* Medias Querys */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1090px){
     
     .header_nav_lista_paginas{
         font-size: 1em;
@@ -218,4 +222,29 @@ footer div ul li img{
         font-size: 10px;
     }
     */
+}
+
+@media only screen and (max-width: 900px){
+    #header.sticky .header_nav_lista_paginas_iniciosesion, #header.sticky .header_links_paginas{
+        color: white;
+    }
+
+    #header.sticky .header_logo{
+        position: absolute;
+        left: 0.5em;
+        top: 0.1em;
+        z-index: 99;
+    }
+
+    .toggle_menu{
+        width: 40px;
+        display: none;
+    
+        position: absolute;
+        top:1.5em;
+        right: 1.5em;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 99;
+    }
 }
