@@ -41,13 +41,18 @@ async function fetchCryptoData() {
 function retornarTablaHTML(crypto) {
     let claseCryptoModal = "btn-abrir-modal" + crypto.symbol;
     return`<tr>
-            <td id="${claseCryptoModal}">${crypto.symbol}</td>
-            <td id="Price_usd">${crypto.price_usd}</td>
-            <td id="percent_change_1h">${crypto.percent_change_1h}</td>
-            <td id="rank">${crypto.rank}</td>
-            <td id="csupply" class="td_compra">${crypto.csupply}</td>
-            <td id="msupply" class="td_venta">${crypto.msupply}</td>
-          </tr>`
+              <td id="name">${crypto.name}</td>
+              <td id="${claseCryptoModal}">${crypto.symbol}</td>
+              <td></td>
+              <td id="percent_change_1h">${crypto.percent_change_1h}</td>
+              <td id="percent_change_24h">${crypto.percent_change_24h}</td>
+              <td id="percent_change_7d">${crypto.percent_change_7d}</td>
+              <td id="market_cap_usd">${crypto.market_cap_usd}</td>
+              <td id="volume24">${crypto.volume24}</td>
+              <td id="price_btc">${crypto.price_btc}</td>
+              <td id="Price_usd" class="td_compra">${crypto.price_usd}</td>
+              <td id="Price_usd2" class="td_venta">${crypto.price_usd}</td>
+            </tr>`
 }
 
 
