@@ -4,6 +4,7 @@ body{
     background-image: url(../sources/images/inicio-sesion-1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100vh;
 }
 
 header{
@@ -11,12 +12,6 @@ header{
     box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
 }
 
-footer{
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-}
 
 main{
     display: flex;
@@ -29,6 +24,7 @@ main{
 
 }
 
+
 .contenido{
     display: flex;
     flex-direction: column;
@@ -37,6 +33,7 @@ main{
 
     background-color: rgba(163, 163, 155, 0.75);
     width: 40%;
+    min-height: 420px;
     height: 75%;
     box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
 }
@@ -58,6 +55,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
+   
 }
 
 .main_div_iniciosesion form h3{
@@ -119,10 +117,124 @@ main input{
 }
 
 @media only screen and (max-width: 1090px){
-    body{
-        background-image: url(../sources/images/futuristic-finance.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
+   
+}
+
+@media only screen and (max-width: 1050px){
+
+   body main .contenido{
+        font-size: x-small;
+   }
+
+   .main_div_iniciosesion form input{
+    margin: 10px;
+    height: 20px;
+    width: 150px;
+    border: none;
+    
+}
+
+.main_div_iniciosesion form img{
+    width: 20px;
+    height: 20px;
+}
+
+.form_input{
+    display:flex;
+    align-items: center;
+}
+
+.main_div_iniciosesion form{
+    align-items: center;
+   
+}
+
+}
+
+@media only screen and (max-width: 660px){
+
+    body main .contenido{
+         font-size: xx-small;
+    }
+ 
+    .main_div_iniciosesion form input{
+     margin: 10px;
+     height: 20px;
+     width: 100px;
+     border: none;
+     
+ }
+ 
+ .main_div_iniciosesion form img{
+     width: 20px;
+     height: 20px;
+ }
+ 
+ .form_input{
+     display:flex;
+     align-items: center;
+ }
+ 
+ .main_div_iniciosesion form{
+    align-items: center;
+   
+}
+
+.contenido{
+   
+    width: 50%;
+    height: 75%;
+}
+ }
+
+
+ @media only screen and (min-height: 1200px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: 0;
     }
 
 }
+ @media only screen and (max-width: 380px){
+
+    body main .contenido{
+         font-size: xx-small;
+    }
+ 
+    .main_div_iniciosesion form input{
+     margin: 10px;
+     height: 20px;
+     width: 100%;
+     border: none;
+     
+ }
+
+ .main_div_iniciosesion .form_bottom{
+    width: 50%;
+ }
+ 
+ .main_div_iniciosesion form img{
+    display: none;
+ }
+ 
+ .form_input{
+     display:flex;
+     align-items: center;
+ }
+ 
+ .main_div_iniciosesion form{
+    align-items: center;
+   
+}
+
+.contenido{
+   
+    width: 60%;
+    height: 75%;
+}
+.main_div_iniciosesion{
+    width: 100%;
+}
+ }

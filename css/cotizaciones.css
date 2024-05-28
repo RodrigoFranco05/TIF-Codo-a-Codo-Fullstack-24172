@@ -134,3 +134,37 @@
 #modalBNB::backdrop,#modalSOL::backdrop,#modalETH::backdrop,#modalBTC::backdrop,#modalLTC::backdrop{
     background-color: rgba(0,0,0,0.55);
 }
+
+@media only screen and (min-height: 812px){
+
+  footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+}
+}
+
+@media only screen and (max-width: 1090px){
+
+  main article div {
+    overflow-x: auto;
+    width: 100vw;
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 900px){
+
+  main {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 370px){
+
+  main {
+    margin-top: 100px;
+  }
+}

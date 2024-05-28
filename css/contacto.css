@@ -10,6 +10,14 @@
   }
   
 
+  
+  body{
+    background-image: url(../sources/images/close-up.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+
+}
 
 main{
     display:flex;
@@ -71,4 +79,57 @@ form select{
     border: 1px solid #0E2038;
     background-color: #0E2038;
     padding: 10px;
+}
+
+
+@media only screen and (min-height: 1200px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1400px){
+    .barra_dolares{
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .barra_dolares{
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    main{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    
+
+    main h1{
+        font-size: medium;
+        
+    }
+
+    main form label{
+        font-size: small;
+        width:30%
+    }
+
+    main form input{
+       
+    }
+}
+
+@media only screen and (max-width: 370px){
+    main{
+        margin-top: 80px;
+    }
 }

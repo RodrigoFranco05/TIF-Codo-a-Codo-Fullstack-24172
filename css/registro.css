@@ -5,10 +5,21 @@ header{
     box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
 }
 
+body{
+    background-image: url(../sources/images/team-work.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+
+}
+
+
+
 main{
     display: flex;
     justify-content: center;
 }
+
 
 .contenido{
     display: flex;
@@ -23,7 +34,7 @@ main{
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     
-    min-width:560px;
+    
     width: 60%;
     margin: 50px;
 }
@@ -120,7 +131,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 100%;
 
     
 }
@@ -158,4 +170,105 @@ main{
 
 #modal a:hover{
     background-color: #23404d;
+}
+
+@media only screen and (min-width: 661px) and (min-height: 1081px){
+    footer{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: 0;
+    }
+
+    .contenido{
+        min-width:560px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 660px){
+
+    .contenido{
+        margin:10%;
+        width:70%;
+        font-size: medium;
+    }
+
+    main .contenido form{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    
+    }
+
+    .contenido form input{
+        width: 90%;
+    }
+
+
+    .contenido form .terminos{
+        grid-column-start: span 2;
+        
+    }
+    
+    .contenido form .terminos label{
+        width: 80%;
+    }
+    .contenido form .terminos input{
+        width: 20%;
+    }
+
+    .contenido form input:last-child{
+        
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    body{
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100%;
+    
+    }
+
+}
+
+@media only screen and (max-width: 390px){
+
+    .contenido{
+        margin:10%;
+        width:70%;
+        font-size: medium;
+    }
+
+    main .contenido form{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    
+    }
+
+    .contenido form input{
+        width: 70%;
+    }
+
+
+    .contenido form .terminos{
+        grid-column-start: span 2;
+        
+    }
+    
+    .contenido form .terminos label{
+        width: 80%;
+    }
+    .contenido form .terminos input{
+        width: 20%;
+    }
+
+    .contenido form input:last-child{
+        
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
 }

@@ -12,7 +12,7 @@
     display: grid;
     align-items: start;
     justify-content: center;
-    height: 100vh;
+    
 
 }
 h2{
@@ -41,6 +41,11 @@ section h2:first-child{
 
 
 
+main section div {
+  overflow-x: auto;
+ 
+  display: block;
+}
 
 /* tabla*/ 
 .container{
@@ -148,4 +153,38 @@ border-radius: 0 0 0 16px;
 
 #modalBNB::backdrop,#modalSOL::backdrop,#modalETH::backdrop,#modalBTC::backdrop,#modalLTC::backdrop{
     background-color: rgba(0,0,0,0.55);
+}
+
+@media only screen and (min-height: 780px){
+
+  footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+}
+}
+
+@media only screen and (max-width: 1090px){
+
+  main section div {
+    overflow-x: auto;
+    width: 90vw;
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 900px){
+
+  main {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 370px){
+
+  main {
+    margin-top: 100px;
+  }
 }
