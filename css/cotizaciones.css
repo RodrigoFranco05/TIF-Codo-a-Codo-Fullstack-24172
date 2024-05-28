@@ -135,6 +135,18 @@
     background-color: rgba(0,0,0,0.55);
 }
 
+@media only screen and (min-height: 1100px){
+
+ 
+  main{
+    font-size:x-large;
+  }
+  div table{
+    font-size: x-large;
+  }
+}
+
+
 @media only screen and (min-height: 812px){
 
   footer{

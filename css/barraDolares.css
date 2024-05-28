@@ -32,6 +32,12 @@ header{
     margin-right: 10px;
 }
 
+.indicador_flecha3{
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .dolar_oficial{
     margin-right: 10px;
 }
@@ -48,6 +54,10 @@ header{
 }
 
 .dolar_oficial_variacion{
+    color: lightgreen;
+}
+
+.dolar_oficial_variacion3{
     color: red;
 }
 
