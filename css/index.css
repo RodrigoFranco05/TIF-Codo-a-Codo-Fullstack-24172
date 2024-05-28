@@ -196,7 +196,7 @@ footer div ul li img{
 
 /* Medias Querys */
 
-@media only screen and (max-width: 1090px){
+@media only screen and (max-width: 1140px){
     
     .header_nav_lista_paginas{
         font-size: 1em;
@@ -246,5 +246,13 @@ footer div ul li img{
         cursor: pointer;
         filter: invert(1);
         z-index: 99;
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+    .footer_div_informacion{
+        width: 100%;
+        font-size: xx-small;
     }
 }

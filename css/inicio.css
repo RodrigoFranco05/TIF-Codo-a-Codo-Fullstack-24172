@@ -65,7 +65,7 @@ main{
 /* --------------- Fin Carrusel ---------------*/
 
 .section_nuestraPlatafoma{
-    padding-top: 800px;
+    padding-top: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,9 +234,37 @@ main{
     color: white;
 }
 
+.buttonfooter{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #0E2038;
+    background-color: #0E2038;
+    padding: 10px;
+}
+
+.buttonfooter:hover{
+    background-color: #19375f;
+    color: white;
+}
 
 
 /* Medias Querys */
+
+@media only screen and (max-width: 1140px){
+    .carousel-caption h3{
+        font-family: "Raleway", sans-serif;
+        font-size: large;
+    }
+
+    .carousel-caption a{
+        font-family: "Raleway", sans-serif;
+        font-size: large;
+    }
+
+}
+
 
 @media only screen and (max-width: 900px){
     /*
@@ -250,6 +278,23 @@ main{
     */
 }
 
+@media only screen and (max-width: 620px){
+    .carousel-caption h3{
+        font-family: "Raleway", sans-serif;
+        font-size: small;
+    }
+
+    .carousel-caption a{
+        font-family: "Raleway", sans-serif;
+        font-size: x-small;
+        width: 80px;
+    }
+
+    .carousel-caption{
+        justify-content: flex-end
+    }
+}
+
 @media only screen and (max-width: 570px){
     /*
     header,main,footer{
@@ -260,4 +305,156 @@ main{
         font-size: 10px;
     }
     */
+}
+
+@media only screen and (max-width: 881px){
+    
+    .section_nuestraPlatafoma h3 {
+        font-size: 2.5em;
+        color: #0E2038;
+        margin-bottom: 50px;
+    }
+    
+    .contenedor_nuestraPlataforma {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .contenedor_nuestraPlataforma div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.4s ease;
+        width: 25%; /* Transición suave para transform y opacidad */
+        cursor: pointer;
+    }
+    
+    .contenedor_nuestraPlataforma div:hover{
+        transform: translateY(-5px); /* Desplazamiento hacia arriba */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    }
+    
+    .contenedor_nuestraPlataforma div img{
+        width: 90%;
+    }
+    
+    .contenedor_nuestraPlataforma div p{
+        font-size: x-large;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+    
+    .section_nuestraPlatafoma h3 {
+        font-size: 2em;
+        color: #0E2038;
+        margin-bottom: 50px;
+    }
+    
+    .contenedor_nuestraPlataforma {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .contenedor_nuestraPlataforma div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.4s ease;
+        width: 25%; /* Transición suave para transform y opacidad */
+        cursor: pointer;
+    }
+    
+    .contenedor_nuestraPlataforma div:hover{
+        transform: translateY(-5px); /* Desplazamiento hacia arriba */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    }
+    
+    .contenedor_nuestraPlataforma div img{
+        width: 90%;
+    }
+    
+    .contenedor_nuestraPlataforma div p{
+        font-size:medium;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 690px){
+.informacion_imagen iframe{
+    display: none;
+}
+
+.informacion .informacion_texto{
+    width: 100%;
+    padding: 2%;
+}
+
+.informacion .informacion_imagen{
+    display: none;
+
+}
+.informacion .informacion_imagen_logo{
+    display: none;
+
+}
+
+}
+
+@media only screen and (max-width: 560px){
+
+    .informacion-6 h2, .informacion-6 a{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 560px){
+  section .informacion_texto{
+    font-size: medium;
+  }  
+
+  section .informacion_texto .informacion_contacto .informacion_contacto_item img{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 360px){
+
+    .informacion-6 h2, .informacion-6 a{
+        font-size: x-small;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+
+    .section_nuestraPlatafoma h3 {
+        font-size: 1.8em;
+        color: #0E2038;
+        margin-bottom: 50px;
+    }
+    
+    
+    .contenedor_nuestraPlataforma div img{
+        width: 90%;
+    }
+    
+    .contenedor_nuestraPlataforma div p{
+        font-size:x-small;
+        text-align: center;
+    }
+
+
+    .footer_div_informacion{
+
+    }
 }
