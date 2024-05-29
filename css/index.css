@@ -100,7 +100,7 @@ header{
     z-index: 1000; /* Ajusta según sea necesario */
     background-color: #E4E4E4;
     box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
-    height: 80px;
+    height: 100px;
 }
 
 #header.sticky .header_nav_lista_paginas_iniciosesion, #header.sticky .header_links_paginas{
@@ -208,6 +208,10 @@ footer div ul li img{
     .header_logo{
         width: 50px;
         margin-left: 40px;
+    }
+
+    #header.sticky {
+        height: 80px;
     }
 
 }
