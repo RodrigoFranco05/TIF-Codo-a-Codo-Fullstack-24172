@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../css/menu_hamburguesa.css">
     <link rel="stylesheet" href="../css/barraDolares.css">
 
-    
+    <script defer src="../scripts/bonos.js"></script>
+    <script defer src="../scripts/acciones.js"></script>
 
 </head>
 <body>
@@ -102,18 +103,15 @@
 
     <main>
 
+      <section>
+        <h2>Bonos</h2>
 
-        <section>
-            
-            <h2>Bonos</h2>
-            <article>
         <div class="container">
             <table>
               <thead>
                 <tr>
-                  <th>Nombre</th>
+                 <th>Nombre</th>
                   <th>tiker</th>
-                  <th> </th>
                   <th>Var.%</th>
                   <th>Precio A.</th>
                   <th>C. Compra</th>
@@ -127,52 +125,21 @@
                   <th>Cant. Op.</th>
                 </tr>
               </thead>
-              <tbody id="tablaBonos">
-                <tr>
-                  <td>AL30</td>
-                  <td><button id="btn-abrir-modal">AL30</button></td>
-                  <td></td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_compra">3.010</td>
-                  <td class="td_venta">3.000</td>
-                  <td class="td_venta">3.010</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                </tr>
-                <tr>
-                  <td>AL58</td>
-                  <td><button id="btn-abrir-modal">AL58</button></td>                  
-                  <td></td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_compra">3.010</td>
-                  <td class="td_venta">3.000</td>
-                  <td class="td_venta">3.010</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                </tr>
+              <tbody id="tablaBonos"> 
               </tbody>
             </table>
           </div>
-            </article>
-            <h2>Acciones</h2>
-            <article>
+        </section>
+
+        <section>
+          <h2>Acciones</h2>
+          
           <div class="container">
             <table>
               <thead>
                 <tr>
                   <th>Nombre</th>
                   <th>tiker</th>
-                  <th> </th>
                   <th>Var.%</th>
                   <th>Precio A.</th>
                   <th>C. Compra</th>
@@ -186,49 +153,11 @@
                   <th>Cant. Op.</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>YPF</td>
-                  <td><button id="btn-abrir-modal">YPF</button></td>
-                  <td>  </td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_compra">3.010</td>
-                  <td class="td_venta">3.000</td>
-                  <td class="td_venta">3.010</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                </tr>
-                <tr>
-                  <td>Galicia</td>
-                  <td><button id="btn-abrir-modal">GAL</button></td> 
-                  <td>  </td>
-                  <td>55.000</td>
-                  <td>1.05%</td>
-                  <td class="td_compra">3.000</td>
-                  <td class="td_compra">3.010</td>
-                  <td class="td_venta">3.000</td>
-                  <td class="td_venta">3.010</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                  <td>1.650K</td>
-                </tr>
+              <tbody id="tablaAcciones"> 
               </tbody>
             </table>
           </div>
-
-          <!-- DIALOGS   -->
-
-
-
-            </article>
-          </section>
+        </section>
     </main>
 
     <footer>
