@@ -1,5 +1,6 @@
 from flask import Flask
 from app.views import *
+from flask_cors import CORS
 from app.database import *
 
 app=Flask(__name__)
@@ -15,7 +16,7 @@ app.route('/api/portafolio/delete/<int:accion_id>', methods =['DELETE'])(delete_
 
 create_table_portafolio()
 init_app(app)
-
+CORS(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
