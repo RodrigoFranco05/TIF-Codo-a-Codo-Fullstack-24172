@@ -55,7 +55,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-   
+    align-items: center;
 }
 
 .main_div_iniciosesion form h3{
@@ -108,6 +108,16 @@ main{
     color: white;
     background-color: #14252C;
     padding: 10px;
+}
+
+.main_div_iniciosesion a{
+    font-family: "Raleway", sans-serif;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
+    background-color: #14252C;
+    padding: 10px;
+    width: fit-content;
 }
 
 
