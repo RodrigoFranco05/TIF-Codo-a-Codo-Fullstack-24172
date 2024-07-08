@@ -69,7 +69,7 @@ class Accion:
                 cursor.execute(
                     """ INSERT INTO portafolio (ticker, cantidad, precio_compra, activo) VALUES (%s,%s,%s,%s)""", (self.ticker, self.cantidad, self.precio_compra, self.activo)
                 )
-                self.id_task = cursor.lastrowid
+                self.id_accion = cursor.lastrowid
             db.commit()
             cursor.close()
 
