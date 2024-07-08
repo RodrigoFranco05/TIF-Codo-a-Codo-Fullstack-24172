@@ -37,6 +37,7 @@ section{
     margin-top: 50px;
     margin-bottom: 15px;
     background: #fff;
+    
 }
 
 .user_total_money{
@@ -107,4 +108,20 @@ hr{
     }
     tbody tr:last-child td:first-child{
     border-radius: 0 0 0 16px;
+    }
+
+    button{
+        background-color: #14252C;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin: auto;
+    }
+
+    button:hover{
+        background-color: #253841;
+    }
+
+    .agregar_accion{
+        display: flex;
     }
