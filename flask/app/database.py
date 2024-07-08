@@ -21,7 +21,7 @@ def create_table_portafolio():
         """
         CREATE TABLE IF NOT EXISTS Portafolio (
         id SERIAL PRIMARY KEY,
-        tiker VARCHAR(10) NOT NULL,
+        ticker VARCHAR(10) NOT NULL,
         cantidad INT NOT NULL,
         precio_compra INT NOT NULL,
         activo BOOLEAN NOT NULL

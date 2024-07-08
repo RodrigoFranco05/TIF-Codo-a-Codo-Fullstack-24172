@@ -43,7 +43,7 @@ class Accion:
     def get_by_id(accion_id):
         db = get_db()
         cursor =db.cursor()
-        cursor.execute("SELECT * FROM portafolio WHERE id = %s", (accion_id))
+        cursor.execute("SELECT * FROM portafolio WHERE id = %s", (accion_id,))
         row = cursor.fetchone()
         cursor.close()
 
@@ -58,20 +58,31 @@ class Accion:
         return None
         
     def save(self):
-            db=get_db()
-            cursor = db.cursor()
-            if self.id_accion:
-                cursor.execute(
-                    """ 
-                    UPDATE portafolio SET ticker = %s, cantidad = %s, precio_compra = %s, activo = %s WHERE id = %s""", (self.ticker, self.cantidad, self.precio_compra, self.activo)
-                )
-            else:
-                cursor.execute(
-                    """ INSERT INTO portafolio (ticker, cantidad, precio_compra, activo) VALUES (%s,%s,%s,%s)""", (self.ticker, self.cantidad, self.precio_compra, self.activo)
-                )
-                self.id_accion = cursor.lastrowid
-            db.commit()
-            cursor.close()
+        db = get_db()
+        cursor = db.cursor()
+    
+        if self.id_accion:
+            cursor.execute(
+                """
+                UPDATE portafolio 
+                SET ticker = %s, cantidad = %s, precio_compra = %s, activo = %s 
+                WHERE id = %s
+                """, 
+                (self.ticker, self.cantidad, self.precio_compra, self.activo, self.id_accion)
+            )
+        else:
+            cursor.execute(
+                """
+                INSERT INTO portafolio (ticker, cantidad, precio_compra, activo) 
+                VALUES (%s, %s, %s, %s)
+                """, 
+                (self.ticker, self.cantidad, self.precio_compra, self.activo)
+            )
+            self.id_accion = cursor.lastrowid
+    
+        db.commit()
+        cursor.close()
+
 
     def delete(self):
             db = get_db()
