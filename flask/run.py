@@ -5,6 +5,10 @@ from app.database import *
 
 app=Flask(__name__)
 
+create_table_portafolio()
+init_app(app)
+CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}})  # Habilita CORS para todas las rutas desde http://127.0.0.1:5500
+
 #Rutas
 app.route('/',methods=['GET'])(index)
 
@@ -14,9 +18,6 @@ app.route('/api/portafolio/create', methods=['POST'])(create_accion)
 app.route('/api/portafolio/update/<int:accion_id>', methods=['PUT'])(update_accion)
 app.route('/api/portafolio/delete/<int:accion_id>', methods =['DELETE'])(delete_accion)
 
-create_table_portafolio()
-init_app(app)
-CORS(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
