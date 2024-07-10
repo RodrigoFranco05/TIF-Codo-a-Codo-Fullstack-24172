@@ -14,15 +14,6 @@ async function fetchCryptoData() {
 
     const filteredData = await response.json();
 
-    //const specificIDs = ["90", "80", "1", "2710", "48543"];
-
-    /*const filteredData = data.data.filter((crypto) =>
-      specificIDs.includes(crypto.id)
-    );*/
-
-    //const cryptoDiv = document.getElementById('crypto-data');
-    // cryptoDiv.innerHTML = '<pre>' + JSON.stringify(filteredData, null, 2) + '</pre>';
-
     filteredData.forEach((accion) => {
       tablaBonos.innerHTML += retornarTablaHTML(accion);
     });
@@ -33,7 +24,7 @@ async function fetchCryptoData() {
     // Itera sobre cada botón de eliminar y agrega un event listener
     botonesEliminar.forEach(boton => {
         boton.addEventListener('click', (event) => {
-            console.log('aaa' + event.currentTarget.getAttribute('data-id'))
+            
             // Obtiene el ID de la acción desde el atributo data-id del botón
             let id = event.currentTarget.getAttribute('data-id');
 
@@ -55,29 +46,23 @@ async function fetchCryptoData() {
 }
 
 function retornarTablaHTML(accion) {
+  let precio_actual = Math.floor(Math.random() * (10000 - 1000 + 1)) + 1000;
+  let gan_perd = precio_actual - accion.precio_compra;
+  let total= precio_actual * accion.cantidad;
+
   return `<tr">
-                        <th></th>
-                        <th id="ticker">${accion.ticker}</th>
-                        <th></th>
-                        <th id="cantidad">${accion.cantidad}</th>
-                        <th id="precio_compra">${accion.precio_compra}</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th class="botonEliminar" data-id="${accion.id}">x</th>
+                        <td>${accion.ticker}</td>
+                        <td id="ticker">${accion.ticker}</td>
+                        <td></td>
+                        <td id="cantidad">${accion.cantidad}</td>
+                        <td id="precio_compra">${accion.precio_compra}</td>
+                        <td>${precio_actual}</td>
+                        <td>${gan_perd}</td>
+                        <td>${total}</td>
+                        <td class="botonEliminar" data-id="${accion.id}">x</td>
                     </tr>
     `;
 }
 
 
 fetchCryptoData();
-/*
-function archiveTask(event) {
-    let id = event.currentTarget.task_id;
-
-    let url = BASE_URL + '/api/tasks/archive/' + id;
-
-    fetchData(url, "DELETE", () => {
-        location.reload();
-    });
-}*/

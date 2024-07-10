@@ -3,14 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agregar Accion</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/agregarAccion.css">
+    <link rel="stylesheet" href="../css/menu_hamburguesa.css">
+    <link rel="stylesheet" href="../css/barraDolares.css">
 </head>
 <body>
-    <input type="text" name="ticker" id="ticker">
-    <input type="number" name="cantidad" id="cantidad">
-    <input type="number" name="precio_compra" id="precio_compra">
+    <header id="header">
+        <img src="../sources/images/logoBA.png" alt="" class="header_logo">
+        <nav class="header_nav">
+            <ul class="header_nav_lista_de_paginas">
+                <li class="header_nav_lista_paginas">
+                    <a href="../index.html" class="header_links_paginas">Inicio</a>
+                </li>
+                <li class="header_nav_lista_paginas">
+                    <a href="cotizaciones.html" class="header_links_paginas">Mercado</a>
+                </li>
+                <li class="header_nav_lista_paginas">
+                    <a href="cryptomonedas.html" class="header_links_paginas">Criptomonedas</a>
+                </li>
+                <li class="header_nav_lista_paginas">
+                    <a href="contacto.html" class="header_links_paginas">Contacto</a>
+                </li>
+            </ul>
+            <div class="header_nav_div_pagina_iniciosesion">
+                <ul class="header_nav_pagina_iniciosesion">
+                    <li class="header_nav_lista_paginas_iniciosesion">
+                        <a href="iniciosesion.html" class="header_links_paginas">Inicio de Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <button id="Crear">Crear</button>
+        <nav class="hamburger_nav">
+            <div id="toggle_menu" class="toggle_menu">
+                <img src="../sources/images/menu.png" alt="">
+            </div>
+            <ul class="hamburger_nav_lista_de_paginas" id="hamburger_nav_lista_de_paginas">
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="../index.html" class="header_links_paginas">Inicio</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="cotizaciones.html" class="header_links_paginas">Mercado</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="cryptomonedas.html" class="header_links_paginas">Criptomonedas</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                    <a href="contacto.html" class="header_links_paginas">Contacto</a>
+                </li>
+                <li class="hamburger_nav_lista_paginas">
+                     <a href="iniciosesion.html" class="header_links_paginas">Inicio de Sesion</a>
+                </li>
+                </ul>
+        </nav>
+
+        <div class="barra_dolares" id="barra_dolares">
+            <ul>
+                <li>
+                  <span class="indicador_flecha">▲</span>
+                  <span class="dolar_oficial">Dolar Oficial</span>
+                  <span class="dolar_oficial_compra">900</span>
+                  <span class="dolar_oficial_venta">950</span>
+                  <span class="dolar_oficial_variacion">0,05%</span>
+                </li>
+                <li>
+                  <span class="indicador_flecha">▲</span>
+                  <span class="dolar_oficial">Dolar Blue</span>
+                  <span class="dolar_oficial_compra">1200</span>
+                  <span class="dolar_oficial_venta">1270</span>
+                  <span class="dolar_oficial_variacion">0,45%</span>
+                </li>
+                <li>
+                  <span class="indicador_flecha3">▼</span>
+                  <span class="dolar_oficial">Dolar CCL</span>
+                  <span class="dolar_oficial_compra">960</span>
+                  <span class="dolar_oficial_venta">962</span>
+                  <span class="dolar_oficial_variacion3">0,12%</span>
+                </li>
+                <li>
+                  <span class="indicador_flecha">▲</span>
+                  <span class="dolar_oficial">Dolar Cripto</span>
+                  <span class="dolar_oficial_compra">1360</span>
+                  <span class="dolar_oficial_venta">1384</span>
+                  <span class="dolar_oficial_variacion">0,07%</span>
+                </li>
+              </ul>
+          </div>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h1>Agregar accion</h1>
+                <hr>
+                <div class="form">
+                    
+                    <label for="ticker">Tiker</label>
+                    <input type="text" name="ticker" id="ticker">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad">
+                    <label for="precio_compra">Precio de Compra</label>
+                    <input type="number" name="precio_compra" id="precio_compra">
+
+
+                    <button id="Crear">Crear</button>
+
+
+                </div>
+                <hr>
+                <a href="perfil.html">Volver al Perfil</a>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_div_general">
+            <div class="footer_div_informacion">
+                <div class="footer_div_redes">
+                    <ul class="footer_lista_informacion">
+                        <li class="footer_lista_informacion_item">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPtJREFUSEvtlT1OgkEURc/tbHAFlMaKioLSYCFswB1gSaByA65AYq17sFUSbE2ooDIkVCRswMTyGsh85AOJIc6MsXD6d8/7mfueyPyUWZ/fBdgeAc3Iql4knRcaWxXYdqT4OlzSRjcGsEpmDixCUnWgkgowAS4lzYqKbb8CjRSAd+BU0rLczpSAZ0mtlbjtM+AmdYseJHUC4Bbo736M2CGXAXdANxXgGhgDS0lvoYIToBoAj8BxzJDbkp72+cT2EfCxMdcPffAdoAZMYwFFfLYZ/APWzjxkm/7tGRxycO4lXQWjDYDejjeGki72HpwUx+bL2sghWtbMfvQ/AXhNnBlwviRnAAAAAElFTkSuQmCC"/>
+                            <a href="https://www.facebook.com/">Facebook</a></li>
+                        <li class="footer_lista_informacion_item">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbNJREFUSEvd1c2LjXEUB/DPF0WNrFgo8lKSQpIVS1KkvKSJpixYSPZE5A9gY0E2mpSNzSyUsrCRbEQRCysTJUpWUt7q5/7qXl137n1m7tRs5uye55zz/T7ne16emGPLHOObZwSllJEk35tkK6UswxUcwDr8xg1cxEocrM9JSsX5J1EpZSHeYDTJ60EkpZRH2N3H/wGrcTzJvY6/m2AtJvEFh5M87QUppWzHi4YKn+Mx7iZ52VvBEnzDojbAbVxO8qkDWEoZq8kNBFXes0nuTKmgviil1K/e2QPwBPfxDNtwvYFgPMnJbn+3REuxEQ+xfJb7cTXJuUEEq/AeX1tTsGKWBFWem4MIFuAd1swSvKZtSvK2L0G7B0daQXXEOo0ehmsyyfrehCmnopQyikvYMgw6ziS5NROC/XgwJHhdsg1Jfk1L0JaqzvGJGZL8wa4kdYynWN9rWkqpDd+MCzjWQFTvzakk44Ni+vVgBDtwHvsawH9gLMlEU6Xdi7YH17C1+wgOSK7LeLq1tVX7RvuvgvYpPopD2IvFLZl+4jM+ol7SiSSvpgPu+OfZH22mZQ8TN+cS/QWHhHkZrTvZMgAAAABJRU5ErkJggg=="/>
+                            <a href="https://twitter.com/">Twitter</a></li>
+                        <li class="footer_lista_informacion_item">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEvFlU+ITmEUxn+PPwspRhY0CxskMaVmLO2YHc1iiLCxZCdNFlKyUEgWspmFjT9jMYmVZGcjNkhSmsWUDTajocTMPO7R/b7eeee+9X3pa87unn/PPec557yix6Ie52d5AGxvBc4C+4DdUPwRA++BF8BNSZ/yjiypwPbpcAZWd9m+P8AZSeNp3CIA24PAK2BFl8lb7nPAkKS3LUUO8AgY6SL5V2AAOAzcquMmJY2WAKaBLQ0An4ErwAdgI7ADOA9MSxqwPQS8ruOmJG0rAfwA1mYAzyoiRyXNpnrbu4CnwM+Ksz5gU22flbRuCYDt6Pt8lvwbsB1YA1wH9tf2AB0D4k9jglKZk9QekDYHtkP5O3O+JmnM9gPgaGabkHTM9hPgYGKbl7SqqYJQxqilckrSHdszwPrM9l1Sn+2L1Z5cSmwLklY2AUQ1C1mSmOvbBYAvkjbbvgBcXjT7Ursz+ZjGZqZyV9LJQovuV5t73PZj4FAS1MxBONjOAaKiPdWGBtlXgeE60XPgXIHkX5JiKP5JXkHTmMZujEh6k5ZmO+7UBNCfVT0jaUMJII5Ve0lS4qqNncwW7UCWuPX5UdLOEsDDKsmRQmCn6nuSTpQA9gIv//PYDUp61whQE927c91CzR6cuJYlSR+cG9VIT+WOy/NkdspmJ349r+AvoROuGbkTkcEAAAAASUVORK5CYII="/>
+                            <a href="https://www.instagram.com/">Instagram</a></li>
+                        <li class="footer_lista_informacion_item">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEvtlbFKA0EURc/tTaEgiGAnCPoTlmItYiGCoBCxEKwtBTvBQhQUBLEQsZaU/oSCtSABQYvYX31xdwlLNhsTtglOO+/d8+bMMisqXqo4nxEC2F4BDoG5IbW9AAeS7iMnU2T7CZgfMjxtf5a0kAc42T0DdgYEZb2S2sN3nqANiA3bS8AVMNUnqAlsSmrYznKKTlCT9GV7/AdwDqyWQO6AuqRP22NAKx20CPAKbEh6jALba8ApMJEDfQC7km6TukXgGpgpA6Q5l8C+pJbtUBXKQl2sRqKkabsGHANbnQMU3kFuyjdgW9JDMmU9mS7UxemWgQtgOq+xX0DadwPsSQotERy6ToD1ovv5KyBy3js0hL7JXpc/CKDPL/a37B9Qqqubosofu3iuj4DZ0vF6F3R/rocMLWwfoV9mVYq+AXKthxlWNWPsAAAAAElFTkSuQmCC"/>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCHTbcpvmgGdBBwpNSrmXdnrQMhngnFDdgsgcFdhLnbnrsqbLCMWhMmrxjFvgmPNllVFFg">Mail</a></li>
+                    </ul>
+                </div>
+                <div class="footer_div_navegacion">
+                    <ul class="footer_lista_informacion">
+                        <li class="footer_lista_informacion_item"> 
+                            <a href="../index.html">Inicio</a></li>
+                        <li class="footer_lista_informacion_item"> 
+                            <a href="cotizaciones.html">Mercado</a></li>
+                        <li class="footer_lista_informacion_item"> 
+                            <a href="cryptomonedas.html">Criptomonedas</a></li>
+                            <li class="footer_lista_informacion_item"> 
+                                <a href="contacto.html">Contacto</a></li>
+                        <li class="footer_lista_informacion_item"> 
+                            <a href="iniciosesion.html">Inicio de Sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_div_copiright">
+                <p>Terminos y derechos reservados - 2024</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="../listApp/js/fetchData.js"></script>
     <script src="../listApp/js/add_update_accion.js"></script>

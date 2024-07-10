@@ -110,18 +110,21 @@ hr{
     border-radius: 0 0 0 16px;
     }
 
-    button{
+    .agregar_accion a{
         background-color: #14252C;
         color: white;
         border: none;
         padding: 10px;
         margin: auto;
+        text-decoration: none;
     }
 
-    button:hover{
+    a:hover{
         background-color: #253841;
     }
 
     .agregar_accion{
         display: flex;
+        justify-content: center;
     }
+
